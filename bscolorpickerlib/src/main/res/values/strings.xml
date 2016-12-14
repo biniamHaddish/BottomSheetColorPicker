@@ -1,0 +1,12 @@
+<resources xmlns:xliff="http://schemas.android.com/tools">
+    <string name="app_name">BottomSheetColorPicker</string>
+    <string name="ColorPickerTitle">Color Chooser</string>
+    <!-- Default textViewTitle for color picker dialog [CHAR LIMIT=30] -->
+    <string name="color_picker_default_title">Select a Color</string>
+    <!-- Content description for a color square. -->
+    <string name="color_swatch_description">Color <xliff:g example="14" id="color_index">%1$d</xliff:g></string>
+    <!-- Content description for a selected color square. -->
+    <string name="color_swatch_description_selected">Color <xliff:g example="14" id="color_index">%1$d</xliff:g> selected</string>
+
+
+</resources>

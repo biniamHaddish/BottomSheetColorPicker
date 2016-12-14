@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">BottomSheetColorPicker</string>
+    <string name="pref_theme_color_key">pref_theme_color_key</string>
+</resources>

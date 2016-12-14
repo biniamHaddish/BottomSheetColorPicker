@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:apps="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/bottom_sheetContainer"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/White"
+
+        >
+        <TextView
+            android:id="@+id/Text_View_Color_picker_Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ColorPickerTitle"
+            android:textSize="20dp"
+            android:textColor="@android:color/black"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:freezesText="true"
+            />
+
+    </RelativeLayout>
+
+<android.support.v4.widget.NestedScrollView android:id="@+id/bottom_sheet"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clipToPadding="true"
+    android:background="@android:color/white"
+    apps:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+    >
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="fill" >
+        <FrameLayout
+            android:id="@+id/frame_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="fill"
+            android:padding="24dp" >
+
+        <com.biniam.haddish.bscolorpickerlib.ColorPaletteTable
+            android:id="@+id/color_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="gone"
+            />
+        </FrameLayout>
+</ScrollView>
+
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

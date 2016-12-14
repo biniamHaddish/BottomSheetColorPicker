@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.biniam.haddish.bottomsheetcolorpicker.MainActivity">
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/PrefTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Colors"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        />
+</RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/themRelativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/half_black"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@id/PrefTitle"
+            android:layout_marginTop="20dp"
+            />
+
+    <ImageView
+        android:id="@+id/themeImg"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/theme"
+        android:layout_below="@id/PrefTitle"
+        android:layout_marginTop="35dp"
+        />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/themeImg"
+            android:background="@color/half_black"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change Primary Color"
+            android:layout_marginLeft="46dp"
+            android:layout_marginStart="46dp"
+            android:layout_alignTop="@+id/themeImg"
+            android:layout_toRightOf="@+id/themeImg"
+            android:layout_toEndOf="@+id/themeImg" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
